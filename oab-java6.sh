@@ -324,7 +324,7 @@ do
 done
 
 # Determine the new version
-NEW_VERSION="${DEB_VERSION}~${LSB_CODE}1"
+NEW_VERSION="${DEB_VERSION}-0ubuntu1-ps3.5.0~${BUILD_NUMBER}"
 
 if [ "${SKIP_REBUILD}" -eq 1 -a -r "${WD}/deb/sun-java${JAVA_VER}_${NEW_VERSION}_${LSB_ARCH}.changes" ]; then
   echo " [!] Package exists, skipping build "
